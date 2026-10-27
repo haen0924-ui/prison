@@ -290,6 +290,7 @@
 
 
 
+
   .langs { display: flex; gap: 8px; justify-content: center; margin-bottom: 18px; }
   .langs button { width: auto; flex: 1; padding: 10px 6px; font-size: 15px; }
   .langs button.on { background: #1976d2; }
@@ -450,12 +451,12 @@
   // 게임을 시작할 때마다 10문항을 무작위로 섞어 10개 칸에 배치합니다.
   const QUESTIONS = [
     { type: "ox", label: { ko: "⭕❌ OX 퀴즈", en: "⭕❌ True or False" },
-      q: { ko: "농인이 회의실에 앉아 있기만 하면 대화에 동등하게 참여하고 있다고 볼 수 있다.", en: "If a Deaf person simply sits in the meeting room, they can be considered to be participating in the conversation on equal terms." },
+      q: { ko: "농인이 대화나 회의를 할 때 같이 앉아 있다면 대화에 동등하게 참여하고 있다고 볼 수 있다.", en: "If a Deaf person sits together with others during a conversation or meeting, they can be considered to be participating in the conversation on equal terms." },
       answer: false,
       explain: { ko: "시청자화는 한 공간에 있어도 맥락과 말차례에서 밀려나는 현상입니다.", en: "'Audience-ization' is when a Deaf person is in the same space but is pushed out of the flow of the conversation and turn-taking." },
       src: { ko: "근거: 2쪽 · 논문 92-93쪽", en: "Source: p. 2 · paper pp. 92–93" } },
     { type: "mc", label: { ko: "🔘 객관식", en: "🔘 Multiple choice" },
-      q: { ko: "가족이 식탁에서 구어로만 대화해 농인 자녀가 대화를 따라가지 못합니다. 가장 가까운 개념은?", en: "At the family table, everyone talks only in spoken language, so the Deaf child cannot follow the conversation. Which concept is closest?" },
+      q: { ko: "가족이 함께 식사할 때 구어(음성언어)로만 대화하여 농인 자녀가 대화를 따라가지 못하는 경험을 설명하는 개념은 무엇일까요?", en: "When a family eats together and talks only in spoken language, the Deaf child cannot follow the conversation. Which concept explains this experience?" },
       options: { ko: ["식탁증후군", "순차통역", "수어 전환"], en: ["Dinner-table syndrome (식탁증후군)", "Consecutive interpreting", "Switching to sign language"] },
       answer: 0,
       explain: { ko: "가족 식탁에서도 구어 중심 대화는 농인 자녀를 소외시킬 수 있습니다.", en: "Even at the family table, spoken-language-centered conversation can exclude a Deaf child." },
@@ -501,7 +502,7 @@
       explain: { ko: "농사회 안에서도 구어 중심 관행이 반복될 수 있어 함께 조정할 필요가 있습니다.", en: "Spoken-language-centered customs can repeat even within the Deaf community, so everyone needs to adjust together." },
       src: { ko: "근거: 8쪽 · 논문 115-116쪽", en: "Source: p. 8 · paper pp. 115–116" } },
     { type: "mc", label: { ko: "🔘 객관식", en: "🔘 Multiple choice" },
-      q: { ko: "데프 월드에서 수어를 우선 사용하는 이유로 가장 적절한 것은?", en: "Which is the most appropriate reason for prioritizing sign language in Deaf World?" },
+      q: { ko: "본 행사인 <웰컴 투 데프 월드>에서 수어 사용을 우선으로 하는 이유로 가장 적절한 것은?", en: "Which is the most appropriate reason for prioritizing sign language use at this event, <Welcome to Deaf World>?" },
       options: { ko: ["농인도 직접 대화의 주체로 참여하도록", "다른 언어가 언제나 열등해서", "수어를 모르는 사람을 배제하도록"], en: ["So that Deaf people can also take part directly as participants in conversation", "Because other languages are always inferior", "To exclude people who do not know sign language"] },
       answer: 0,
       explain: { ko: "중심 언어를 수어로 바꾸는 것은 동등한 참여 구조를 경험하기 위한 것입니다.", en: "Changing the central language to sign language is meant to let everyone experience a structure of equal participation." },
