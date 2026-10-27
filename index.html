@@ -288,6 +288,7 @@
 
 
 
+
   .langs { display: flex; gap: 8px; justify-content: center; margin-bottom: 18px; }
   .langs button { width: auto; flex: 1; padding: 10px 6px; font-size: 15px; }
   .langs button.on { background: #1976d2; }
@@ -320,10 +321,10 @@
 
   @media (orientation: landscape) and (min-width: 760px) {
     .card { max-width: 1180px; }
-    #scene-screen { display: grid; grid-template-columns: calc((100vh - 170px) * 0.75) minmax(0, 1fr); column-gap: 24px; row-gap: 12px; align-items: start; }
+    #scene-screen { display: grid; grid-template-columns: minmax(0, 1fr) calc((100vh - 170px) * 0.75); column-gap: 24px; row-gap: 12px; align-items: start; }
     #scene-screen > .top, #scene-screen > .bar { grid-column: 1 / -1; }
-    #scene-screen > #scene-box { grid-column: 1; grid-row: 3 / span 3; width: min(100%, calc((100vh - 170px) * 0.75)); margin: 0; }
-    #scene-screen > .scene-name, #scene-screen > .narr, #scene-screen > .hint { grid-column: 2; }
+    #scene-screen > #scene-box { grid-column: 2; grid-row: 3 / span 3; width: min(100%, calc((100vh - 170px) * 0.75)); margin: 0; }
+    #scene-screen > .scene-name, #scene-screen > .narr, #scene-screen > .hint { grid-column: 1; }
     #scene-screen > .scene-name { margin-bottom: 0; }
     #scene-screen > .narr { min-height: 160px; font-size: 17px; }
   }
